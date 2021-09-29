@@ -15,7 +15,6 @@ header {
 nav .nav-tabs {
   list-style: none;
   display: flex;
-  
 }
 
 nav .nav-tabs li {
@@ -92,10 +91,11 @@ nav .nav-tabs li a {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  width: 100%;
 }
 
 .main-me {
-  max-width: 920px;
+  width: 75%;
   margin-top: 2rem;
   display: flex;
   align-items: center;
@@ -108,7 +108,7 @@ nav .nav-tabs li a {
 
 .me-container {
   margin-left: 2rem;
-  height: 16rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -136,7 +136,7 @@ nav .nav-tabs li a {
 }
 
 .main-projects {
-  width: 920px;
+  width: 75%;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -216,7 +216,7 @@ nav .nav-tabs li a {
 }
 
 .main-experience {
-  width: 920px;
+  width: 75%;
   margin-top: 2rem;
 }
 
@@ -271,7 +271,7 @@ nav .nav-tabs li a {
 }
 
 .repositories-container {
-  max-width: 920px;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -287,7 +287,6 @@ nav .nav-tabs li a {
 .repository {
   position: relative;
   width: 15rem;
-  height: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -314,7 +313,7 @@ nav .nav-tabs li a {
 }
 
 .main-content {
-  width: 920px;
+  width: 75%;
   margin: 2rem 0;
 }
 
@@ -341,4 +340,111 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+}
+
+@media (max-width: 1120px) {
+  .search-container:hover > .search {
+    width: 120px;
+  }
+
+  .projects-list {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .projects-list a {
+    margin-bottom: 1rem;
+  }
+
+  .btn-projects-container {
+    margin-top: 0;
+  }
+
+  .logo-enterprise {
+    width: 100px;
+    height: auto;
+  }
+
+  .repositories-list {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .repository {
+    margin-bottom: 1rem;
+  }
+
+  .content-list {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .content-list li {
+    margin-bottom: 1rem;
+  }
+
+
+}
+
+@media (max-width: 690px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  nav .nav-tabs {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: .5rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .btn-projects-container {
+    justify-content: center;
+  }
+
+  .main-me {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .description-container {
+    text-align: center;
+  }
+
+  .me-container {
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .social-container {
+    margin-top: .5rem;
+  }
+
+  .social-container h2 {
+    margin-bottom: 0;
+  }
+
+  .projects-title-container {
+    flex-direction: column;
+  }
+
+  .projects-title-container h2 {
+    margin-bottom: .5rem;
+  }
+
+  .footer-content {
+    max-width: 920px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+ 
 }
