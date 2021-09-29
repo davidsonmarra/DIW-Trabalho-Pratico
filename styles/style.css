@@ -1,0 +1,344 @@
+header {
+  width: 100%;
+  background-color: rgb(168, 168, 168);
+  padding: 1rem 2rem;
+}
+
+.header-container {
+  max-width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+nav .nav-tabs {
+  list-style: none;
+  display: flex;
+  
+}
+
+nav .nav-tabs li {
+  padding-bottom: 1px;
+  margin-left: .5rem;
+  border-bottom: 2px solid transparent;
+}
+
+nav .nav-tabs li a {
+  transition: all .1s;
+}
+
+nav .nav-tabs li:first-child {
+  margin-left: 0;
+}
+
+nav .nav-tabs li a:hover {
+  border-bottom: 2px solid #111;
+}
+
+nav .nav-tabs li a {
+  text-decoration: none;
+  color: #222;
+}
+
+.search-container {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #333;
+}
+
+.search-btn {
+  float: right;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.search {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #333;
+  font-size: 16px;
+  transition: .4s;
+  line-height:30px;
+  width: 0px;
+}
+
+.search-container:hover > .search {
+  width: 200px;
+  padding: 0 6px;
+}
+
+.search-container:hover > .search-btn {
+  background-color: rgb(133, 133, 133);
+}
+
+.search::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(94, 94, 94);
+  opacity: 1; /* Firefox */
+}
+
+.container { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.main-me {
+  max-width: 920px;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.my-photo {
+  height: 16rem;
+  border-radius: .5rem;
+}
+
+.me-container {
+  margin-left: 2rem;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description-container h2 {
+  margin-bottom: 1rem;
+}
+
+.social-container h2 {
+  margin-bottom: 1rem;
+}
+
+.social-container svg {
+  padding: .4rem;
+  border-radius: .5rem;
+}
+
+.social-container svg:first-child {
+  margin-right: .5rem;
+}
+
+.social-logos svg:hover {
+  background-color: #00000022;
+}
+
+.main-projects {
+  width: 920px;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-title-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#select-types {
+  height: 2rem;
+  width: 15rem;
+  border-radius: .3rem;
+  padding: .2rem .5rem;
+  background-color: transparent;
+}
+
+#select-types:hover, #select-types:focus {
+  cursor: pointer;
+  background-color: #00000011;
+}
+
+.projects-list-container {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.projects-list {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-projects-container {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-projects-container button {
+  height: 2rem;
+  width: 15rem;
+  border: none;
+  padding: .2rem .5rem;
+  background-color: rgb(77, 77, 77);
+  color: #FEFEFE;
+  border-radius: .2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s;
+}
+
+.btn-projects-container button:hover {
+  background-color: rgb(34, 34, 34);
+  color: #FFFFFF;
+}
+
+.project-img {
+  width: 200px;
+  height: 120px;
+  border: 2px solid transparent;
+  object-fit: cover;
+  object-position: 50%;
+  border-radius: .5rem;
+  transition: border .3s;
+}
+
+.projects-list a:hover .project-img {
+  border-color: #333;
+}
+
+.main-experience {
+  width: 920px;
+  margin-top: 2rem;
+}
+
+.experience-menu {
+  width: 100%;
+}
+
+.list-experinces {
+  list-style: none;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.list-experinces li {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(206, 206, 204);
+  display: flex;
+}
+
+.list-experinces li:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.logo-enterprise {
+  width: 150px;
+  height: 120px;
+  border: 2px solid transparent;
+  object-fit: cover;
+  object-position: 50%;
+  border-radius: .5rem;
+  background: #ffffff;
+}
+
+.text-container {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.period {
+  font-size: 1.19rem;
+}
+
+.main-repositories {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: rgb(168, 168, 168);
+  padding: 1.5rem 0;
+}
+
+.repositories-container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.repositories-list {
+  width: 100%;
+  list-style: none;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.repository {
+  position: relative;
+  width: 15rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 60px;
+}
+
+.repository:hover {
+  cursor: pointer;
+}
+
+.repository:hover .icon-repository {
+  cursor: pointer;
+  background-color: rgb(146, 146, 146);
+}
+
+.icon-repository {
+  position: absolute;
+  left: 0;
+  transform: translateX(-150%);
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: transparent;
+  transition: all .3s;
+}
+
+.main-content {
+  width: 920px;
+  margin: 2rem 0;
+}
+
+.content-list {
+  list-style: none;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-list li {
+  width: 290px;
+}
+
+footer {
+  width: 100%;
+  padding: .5rem 0;
+  background-color: rgb(146, 146, 146);
+}
+
+.footer-content {
+  max-width: 920px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
